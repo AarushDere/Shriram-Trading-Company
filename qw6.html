@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shriram Trading Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff5722, #ffc107);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: bounceIn 1s ease-in-out;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+      animation: fadeIn 2s ease-in;
+    }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: slideIn 1s ease-out;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5722;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1s ease-out;
+    }
+    .section h2 {
+      text-align: center;
+      color: #ff5722;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: zoomIn 1s ease forwards;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .product:hover img {
+      transform: scale(1.1);
+    }
+    .contact {
+      background: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .contact h3 {
+      margin-bottom: 1rem;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: white;
+      color: #ff5722;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .contact a:hover {
+      background: #ffe0b2;
+      color: #d84315;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-100%); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shriram Trading Company</h1>
+    <p>From Foundation to Finish — We Build and Supply</p>
+    <p style="font-size: 1rem; margin-top: 0.5rem; font-weight: bold;">Serving with trust since 2007</p>
+  </header>
+
+  <!-- rest of the body content stays unchanged -->
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contracting">Contracting</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\exterior-walls-ultima-protek-topcoat-new-asian-paints.png" alt="Paints">
+        <h3>Paints</h3>
+        <p>Asian Paints, Nippon, Indigo, Birla Opus & more</p>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\-ym8ohwz0.avif" alt="Plywood">
+        <h3>Plywood</h3>
+        <p>Available as general supplies for construction needs</p>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\hk_b1510s_a2.jpg" alt="Hardware">
+        <h3>Hardware</h3>
+        <p>General supply of essential tools and accessories</p>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\Арматурный_прокат.jpg" alt="Steel">
+        <h3>Steel</h3>
+        <p>Goel TMT, Polaad Steel and more structural supplies</p>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\cement-sq-1.webp" alt="Cement">
+        <h3>Cement</h3>
+        <p>Ultratech, Ambuja, JK Cement, Shree Cement & more</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="brands">
+    <h2>Brands We Offer</h2>
+    <div class="products">
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\lowongan-kerja-pt-asian-paints-indonesia.jpg" alt="Asian Paints">
+        <h3>Asian Paints</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\eb2196143154619.Y3JvcCwxNTg2LDEyNDEsMTg4MSww.jpg" alt="Nippon Paint">
+        <h3>Nippon Paint</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\Indigo-logo.jpg" alt="Indigo Paints">
+        <h3>Indigo Paints</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\channels4_profile.jpg" alt="Birla Opus">
+        <h3>Birla Opus</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\goel-tmt-1-1600x1333.png" alt="Goel TMT">
+        <h3>Goel TMT</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\images.png" alt="Polaad Steel">
+        <h3>Polaad Steel</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\b221dc206758901.Y3JvcCw4MDgsNjMyLDAsMg.png" alt="Ultratech Cement">
+        <h3>Ultratech Cement</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\ambuja-cement-giant.jpg" alt="Ambuja Cement">
+        <h3>Ambuja Cement</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\images (1).png" alt="JK Cement">
+        <h3>JK Cement</h3>
+      </div>
+      <div class="product">
+        <img src="C:\Users\Aarya\Desktop\New folder\shree-cement-logo-png_seeklogo-386052.png" alt="Shree Cement">
+        <h3>Shree Cement</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contracting">
+    <h2>Contracting Services</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      We are a Government Registered Contractor with years of experience in public works, residential and commercial projects. From civil construction to interior finishing, Shriram Trading Company handles it all with trusted quality and expert teams.
+    </p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      Shriram Trading Company has been a trusted name in the construction supply industry since 2007, providing top-quality paints, hardware, plywood (general), cement, and steel. With our registered contracting services, we offer end-to-end construction solutions to homeowners, contractors, and government agencies.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contact Us</h3>
+    <p>Call or WhatsApp us to place your order or request a quote.</p>
+    <p><strong>Phone:</strong> 9822090646 / 7588168725</p>
+    <p><strong>Address:</strong> Shriram Trading Company, Near ST Stand, Alkuti, Tal. Parner, Dist. Ahmednagar - 414305</p>
+    <a href="https://wa.me/919822090646" target="_blank">Message on WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Shriram Trading Company. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
+
